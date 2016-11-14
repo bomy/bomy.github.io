@@ -1,0 +1,26 @@
+# Dependencies
+markdown            : kramdown
+redcarpet:
+  extensions        : ["tables", "autolink", "strikethrough", "space_after_headers", "with_toc_data", "fenced_code_blocks"]
+highlighter         : rouge
+gems                : ["jekyll-paginate"]
+
+# Permalinks
+permalink           : pretty
+
+# Setup
+title               : My blog
+tagline             : ''
+description         : '.'
+baseurl             : /
+
+author              : Ji-Hui liu
+name                : 'Ji-Hui liu'
+url                 : https://bomy.github.io/
+
+paginate            : 5
+
+# Custom vars
+version             : 0.1.0
+github_username     : bomy
+facebook_username   : jihui.liu
