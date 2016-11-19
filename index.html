@@ -2,19 +2,27 @@
 layout: default
 title: Home
 ---
-
 <div class="posts">
   {% for post in paginator.posts %}
   <div class="post">
     <h1 class="post-title">
       <a href="{{ post.url }}">
         {{ post.title }}
+        {% if post.subtitle %}
+        <p class="post-subtitle">
+            {{ post.subtitle }}
+        </p>
+        {% endif %}
       </a>
     </h1>
-
-    <span class="post-date">{{ post.date | date_to_string }}</span>
-
-    {{ post.content }}
+    <div class="post-info">
+      <div class="post-info-detail">
+        <span class="post-date">Posted by {{ post.author }} on {{ post.date | date: "%B %-d, %Y" }}</span>
+        <span class="fa-stack fa-sm">
+            <i class="fa fa-tags fa-stack-1x"></i>
+        </span>
+      </div>
+    </div>
   </div>
   {% endfor %}
 </div>
