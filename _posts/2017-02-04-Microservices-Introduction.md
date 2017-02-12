@@ -1,6 +1,6 @@
 ---
 layout     : post
-title      : "微服務系統介紹"
+title      : "微服務架構-介紹"
 date       : 2017-02-04 09:52:04
 author     : "Bomy"
 tags       : Microservices
@@ -37,7 +37,7 @@ signature  : true
 
 * 系統業務切割範圍要多大還是多細微，此面臨到微服務的優勢和分散式系統的複雜度，如何在這之間取的平衡。採取單一設計原則(Single Responsibility Principle)是非常強而有力的設計理念，如果將系統架構切割成微服務，將相關責任集合起來，將不相關的責任分離，當然去定義好職責也不是一件簡單的事情。
 
-### 結論
+### 總結
 微服務並不是能萬吃的系統架構，因具有分散式所帶來的複雜度是需要去克服又有高度實作難度，如果要從Monolithic system 要演進成微服務系統，必須要有完善的CI(Continuous Integration)、CD (Continous Delivery)、虛擬化技術和系統監控，才較享有微服務獨立自主性的優勢。
 
 PS 小弟第一次寫文章，有錯誤請指證
