@@ -9,8 +9,8 @@ signature  : true
 ---
 當系統日益狀大，是否有遇過為了升級一個Feature很多系統要一起變更的問題，或者做Request回應過慢的問題，在這裡會先簡單介紹同步和非同步溝通模式。之後探討系統架構，這會關於到系統間的耦合度、維護性和擴充性。再來簡單介紹選擇API技術的考量點。
 
-### 同步(Synchronous)和非同步(asynchronous)
-溝通模式有分為同步(Synchronous)和非同步(asynchronous)，在這裡先簡單介紹這兩種方式。
+### 同步(Synchronous)和非同步(Asynchronous)
+溝通模式有分為同步(Synchronous)和非同步(Asynchronous)，在這裡先簡單介紹這兩種方式。
 * **同步模式**。Client端將訊息送到Server端後，會有阻塞(block)等待Server端處理後的回應，即可以知道事情是否處理完全。
 * **非同步模式**。Client端將訊息送到Server端後，不必等待Server端處理後的回應，另可Callback 於Clinet端。當要處理低延遲回應時，是種很好的運作模式。
 
