@@ -20,13 +20,13 @@ signature  : true
 <div style="text-align:center"><img src="/public/image/reverse_proxy.png" />reverse proxy運作方式</div>
 
 ### 作法
-1. 下載 http://www.iis.net/extensions/ApplicationRequestRouting 安裝後，IIS管理工具，會出現這兩個功能，如下圖。
+Step1. 下載 http://www.iis.net/extensions/ApplicationRequestRouting 安裝後，IIS管理工具，會出現這兩個功能，如下圖。
 <div style="text-align:center"><img src="/public/image/IIS_Reverse_Proxy.png" /></div>
 
-2. 加入 `HTTP_ACCEPT_ENCODING` 設定
+Step2. 加入 `HTTP_ACCEPT_ENCODING` 設定
 <div style="text-align:center"><img src="/public/image/reverse_proxy1.png" /></div>
 
-3. 在Web.config加入至<system.webServer>底下，裡面XML有個www.user.com，是隨著你的Domain決定的。
+Step3. 在Web.config加入至<system.webServer>底下，裡面XML有個www.user.com，是隨著你的Domain決定的。
 
 ```xml
 <rewrite>
@@ -52,7 +52,7 @@ signature  : true
 ```
 
 
-4. 在GA提供的Javascript程式碼，須將https://www.google-analytics.com/analytics.js 修改為http://www.user.com(依你Domain決定)。
+Step4. 在GA提供的Javascript程式碼，須將https://www.google-analytics.com/analytics.js 修改為http://www.user.com(依你Domain決定)。
 
 ``` javascript
 <script>
