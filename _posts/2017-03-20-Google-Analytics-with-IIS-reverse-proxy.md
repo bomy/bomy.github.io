@@ -55,7 +55,6 @@ Step3. 在Web.config加入至<system.webServer>底下，裡面XML有個www.user.
 Step4. 在GA提供的Javascript程式碼，須將https://www.google-analytics.com/analytics.js 修改為http://www.user.com(依你Domain決定)。
 
 ``` javascript
-<script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -63,8 +62,6 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 
 ga('create', 'UA-xxxxx-1', 'auto');
 ga('send', 'pageview');
-
-</script>
 ```
 ### 相關連結
 * [iis7.5做反向代理配置方法實例圖文教程](http://www.cnblogs.com/pengcc/p/4329207.html)
