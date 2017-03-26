@@ -1,6 +1,6 @@
 ---
 layout     : post
-title      : "避免使用switch..Case語法"
+title      : "避免使用Switch..Case語法"
 date       : 2017-03-26 00:00:00
 author     : "Bomy"
 tags       : Javascript
