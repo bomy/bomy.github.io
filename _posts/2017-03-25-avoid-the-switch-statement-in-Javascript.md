@@ -7,7 +7,7 @@ tags       : Javascript
 comments   : true
 signature  : true
 ---
-之前某個前輩說`Switch..Case`不是一個很好的撰寫方法，或者是大量的`IF...ELSE`，例如底下的程式碼，有幾個缺點。
+之前某個前輩說`Switch..Case`不是一個很好的撰寫方法，例如底下的程式碼，有幾個缺點。
 
  * 在撰寫Switch..case時候，會不小心忽略`Break`語句，會導致很難找到BUG。
  * Switch..case有點像是麵條式的寫法，跟Goto語法很像，會將不相關的功能寫在一起，違反了High cohesion。
@@ -134,7 +134,7 @@ console.log(doCalculation("Add",2,3)); //5.
 ### 結論
 雖然Object-literal設計的方式沒有Switch..Case來的直覺，至少不用在寫Break了(笑)。但它可以應用多種情況，例如Command的一些操作，隨時都可以根據情況置換(委派)出想要的功能性組合。
 
-另外在效能方面，根據[這篇](https://toddmotto.com/deprecating-the-switch-statement-for-object-literals/)指出，Object-literal搜尋是透過Hash Table效率約為O(1)，而Switch...Case的效率跟排序有關係約為O(logN~N)，理論上Object效率會比Switch Case好，但是我看到[這篇](https://jsperf.com/switch-from-switches/)的測試結果，Switch...Case竟比Object-literal來的有效率，真是匪夷所思，不知道是不是在新的瀏覽器版本對Switch..Case竟有進行優化過，
+另外在效能方面，根據[這篇](https://toddmotto.com/deprecating-the-switch-statement-for-object-literals/)指出，Object-literal搜尋是透過Hash Table效率約為O(1)，而Switch...Case的效率跟排序有關係約為O(logN~N)，理論上Object效率會比Switch Case好，但是我看到[這篇](https://jsperf.com/switch-from-switches/)的測試結果，Switch...Case竟比Object-literal來的有效率，真是匪夷所思，不知道是不是在新的瀏覽器版本對Switch..Case有進行優化過，
 
 ### 相關連結
 * [Replacing switch statements with Object literals](https://toddmotto.com/deprecating-the-switch-statement-for-object-literals/)
