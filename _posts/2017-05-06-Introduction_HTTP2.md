@@ -53,7 +53,7 @@ HTTP2.0是建立在SPDY基礎上，解決一些HTTP1.1存在的問題，當然�
 ### 結論
 在這裡大約介紹HTTP2的特點，有很多技術沒有去提到(如果有機會，我在寫上來)，不過HTTP2對於HTTP1.X有很大的變革，為了帶來更好的使用者體驗，在未來一定是要升級上去的。另外，或許有些HTTP1.X架構網站的優化技巧，像是合併壓縮方式，到了HTTP2.0架構，就可能效果就沒有那麼顯著了(時代的眼淚)，
 
-###相關連結
+### 相關連結
 * [hpbn.co](https://hpbn.co/primer-on-web-performance/#latency-as-a-performance-bottleneck)
 * [Creating HTTP/2 Supported Website With ASP.NET Core and Hosting In Windows 10 (IIS 10.0.x)](http://www.c-sharpcorner.com/UploadFile/efa3cf/creating-http2-supported-website-with-Asp-Net-core-hostin/)
 * [WHAT IS HTTP/2: AN INTRODUCTION](https://kinsta.com/learn/what-is-http2/)
