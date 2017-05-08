@@ -31,7 +31,7 @@ function doCalculation(action,a,b) {
 }
 console.log(doCalculation("Add",2,3)); //5
 ```
-基於上述原因，我們需要比較有彈性的設計方法。那個如果去設計呢?可以使用Javascript中較優雅的`Object-literal`和`Function`語法來設計，例如底下的範例。
+基於上述原因，我們需要比較有彈性的設計方法，可使用較優雅的`Object-literal`和`Function`語法來設計，例如底下的範例。
 
 ``` javascript
 function doCalculation(action,a,b) {
