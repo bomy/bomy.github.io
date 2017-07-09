@@ -12,7 +12,7 @@ signature  : true
 <div style="text-align:center"><img src="/public/image/Microservices_from_a_monolith.png" /></div>
 
 ## 如何看到高耦合問題
-假設我們識別好[每個Service邊界上下文](http://bomy.github.io/2017/02/11/Microservices-Bounded-Context/)，那如何進行系統重構呢？首先可以使用`[SchnaSpy](http://schemaspy.sourceforge.net/sample/relationships.html/)`工具，可觀察資料庫的資料表之間的關係，最大的好處是以圖形介面呈現，可以清楚使我們看到資料間的耦合關係，在這裡你可能會看到幾種資料表間耦合的情況。
+假設我們識別好[每個Service邊界上下文](http://bomy.github.io/2017/02/11/Microservices-Bounded-Context/)，那如何進行系統重構呢？首先可以使用[SchnaSpy](http://schemaspy.sourceforge.net/sample/relationships.html/)工具，可觀察資料庫的資料表之間的關係，最大的好處是以圖形介面呈現，可以清楚使我們看到資料間的耦合關係，在這裡你可能會看到幾種資料表間耦合的情況。
 
 
 #### **資料表間耦合關係**
