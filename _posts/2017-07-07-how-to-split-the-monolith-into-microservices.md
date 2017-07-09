@@ -30,7 +30,7 @@ signature  : true
 ![Alt text](/public/image/shardrecord.png)
 
 ####  **共用的資料表**
-另外一種情況是，不同的關注點都放在同一張資料表裡面，例如Sale程序會使用到商品的價格和資訊，Finance程序會使用到商品的成本。而這兩個是不一樣的一個概念，可以將原始的資料表切割成兩個資料表，例如Item sale info 和Item cost info資料表，讓各個服務能夠
+另外一種情況是，不同的關注點都放在同一張資料表裡面，例如Sale程序會使用到商品的價格和資訊，Finance程序會使用到商品的成本。而這兩個是不一樣的一個概念，可以將原始的資料表切割成兩個資料表，例如Item sale info 和Item cost info資料表，讓各個服務能夠獨立自主。
 
 ![Alt text](/public/image/split_table.png)
 
