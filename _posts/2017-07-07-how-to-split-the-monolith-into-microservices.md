@@ -37,7 +37,7 @@ signature  : true
 ## 資料庫如何拆分
 在系統持續運行下，資料庫的重構是很有風險的變革，但可以參考[Refactoring Databases]( https://martinfowler.com/books/refactoringDatabases.html)書籍，裡面有詳細的說明。
 
-在定義好每個Service邊界上下文後，可能須將從Monolithic Schema拆分出各個微服務，的雍有自已獨立的資料庫，而為了確保系統的運作，依照下圖，會有兩個階段，第一個階段是先拆分資料庫，第二個階段是拆分程式碼(微服務)，拆分的過程會遇到一個很重要的問題，就是會失去`資料一致性`，在分散式
+在定義好每個Service邊界上下文後，可能須將從Monolithic Schema拆分出各個微服務，的擁有自已獨立的資料庫，而為了確保系統的運作，依照下圖，會有兩個階段，第一個階段是先拆分資料庫，第二個階段是拆分程式碼(微服務)，拆分的過程會遇到一個很重要的問題，就是會失去`資料一致性`，在分散式
 交易，如果`交易資料(Transaction Data)`失敗了，需要去思考是否需要Roll back或者有個補救失敗的機制。
 ![Alt text](/public/image/Microservices_splite_database.png)
 
