@@ -11,7 +11,7 @@ permalink           : pretty
 # Setup
 title               : Bomy's blog
 description         : 'web/all-around developer'
-baseurl             : /
+baseurl             : https://bomy.github.io/
 
 author              : Ji-Hui liu
 name                : 'Ji-Hui liu'
